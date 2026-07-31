@@ -1,0 +1,42 @@
+# --- GnuCOBOL build output ---
+# executables produced by cobc -x
+bin/
+*.exe
+*.out
+
+# modules produced by cobc -m (dynamic CALL)
+*.so
+*.dll
+*.dylib
+
+# intermediate objects and generated C
+*.o
+*.obj
+*.c.l.h
+*.c.h
+
+# compiler listings and cross-reference reports
+*.lst
+*.i
+*.xref
+
+# --- runtime output ---
+# indexed/relative files created by the programs at run time.
+# only the top level is ignored: the fixture data lives in data/seed/
+# and stays versioned.
+data/*.dat
+data/*.idx
+data/*.inf
+data/*.key
+
+# generated reports and exports
+docs/reports/
+*.log
+
+# --- editor / OS noise ---
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
